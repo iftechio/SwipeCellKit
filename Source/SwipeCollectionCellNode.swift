@@ -27,7 +27,7 @@ open class SwipeCollectionCellNode: ASCellNode, Swipeable {
 
     weak var collectionView: ASCollectionNode?
 
-    let contentNode = ASDisplayNode()
+    public let contentNode = ASDisplayNode()
 
     /// :nodoc:
     open override var frame: CGRect {
