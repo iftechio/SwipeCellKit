@@ -8,7 +8,7 @@
 import Foundation
 import AsyncDisplayKit
 
-extension SwipeCellNode {
+extension SwipeCollectionCellNode {
     /// The point at which the origin of the cell is offset from the non-swiped origin.
     public var swipeOffset: CGFloat {
         set { setSwipeOffset(newValue, animated: false) }

@@ -7,7 +7,7 @@
 
 import AsyncDisplayKit
 
-open class SwipeCellNode: ASCellNode, Swipeable {
+open class SwipeCollectionCellNode: ASCellNode, Swipeable {
     /// The object that acts as the delegate of the `SwipeCollectionViewCell`.
     public weak var delegate: SwipeCollectionViewCellDelegate?
 
@@ -189,7 +189,7 @@ open class SwipeCellNode: ASCellNode, Swipeable {
     }
 }
 
-extension SwipeCellNode: SwipeControllerDelegate {
+extension SwipeCollectionCellNode: SwipeControllerDelegate {
     func swipeController(_ controller: SwipeController, canBeginEditingSwipeableFor orientation: SwipeActionsOrientation) -> Bool {
         return true
     }

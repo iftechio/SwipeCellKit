@@ -37,8 +37,8 @@ extension UICollectionView {
 }
 
 extension ASCollectionNode {
-    var swipeCells: [SwipeCellNode] {
-        return visibleNodes.compactMap({ $0 as? SwipeCellNode })
+    var swipeCells: [SwipeCollectionCellNode] {
+        return visibleNodes.compactMap({ $0 as? SwipeCollectionCellNode })
     }
 
     func hideSwipeCell() {

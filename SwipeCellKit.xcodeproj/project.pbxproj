@@ -31,7 +31,7 @@
 		B93ECA951EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */; };
 		B93ECA991EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */; };
 		B93ECA9B1EDEEABA00AE05AD /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */; };
-		EF65FB3023B1F042006FAC5F /* SwipeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */; };
+		EF65FB3023B1F042006FAC5F /* SwipeCollectionCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65FB2F23B1F042006FAC5F /* SwipeCollectionCellNode.swift */; };
 		EF65FB3323B1F6A5006FAC5F /* SwipeCellNode+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65FB3223B1F6A5006FAC5F /* SwipeCellNode+Display.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
 		B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeOptions.swift; sourceTree = "<group>"; };
-		EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCellNode.swift; sourceTree = "<group>"; };
+		EF65FB2F23B1F042006FAC5F /* SwipeCollectionCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCollectionCellNode.swift; sourceTree = "<group>"; };
 		EF65FB3223B1F6A5006FAC5F /* SwipeCellNode+Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipeCellNode+Display.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +158,7 @@
 		EF65FB3123B1F091006FAC5F /* ASDK */ = {
 			isa = PBXGroup;
 			children = (
-				EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */,
+				EF65FB2F23B1F042006FAC5F /* SwipeCollectionCellNode.swift */,
 				EF65FB3223B1F6A5006FAC5F /* SwipeCellNode+Display.swift */,
 			);
 			name = ASDK;
@@ -272,7 +272,7 @@
 			files = (
 				3F234AD81E44A94F00E22A38 /* SwipeActionsView.swift in Sources */,
 				3F234AD71E44A94F00E22A38 /* SwipeAction.swift in Sources */,
-				EF65FB3023B1F042006FAC5F /* SwipeCellNode.swift in Sources */,
+				EF65FB3023B1F042006FAC5F /* SwipeCollectionCellNode.swift in Sources */,
 				3F3ED7101E486993009DD5D8 /* SwipeActionButton.swift in Sources */,
 				B93ECA931EDEE88800AE05AD /* SwipeCollectionViewCell+Display.swift in Sources */,
 				3F234AD61E44A94F00E22A38 /* SwipeTableViewCell.swift in Sources */,
