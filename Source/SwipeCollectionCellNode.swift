@@ -65,6 +65,7 @@ open class SwipeCollectionCellNode: ASCellNode, Swipeable {
 
     func configure() {
         contentNode.clipsToBounds = false
+        addSubnode(contentNode)
     }
 
     open override func didLoad() {
@@ -93,20 +94,16 @@ open class SwipeCollectionCellNode: ASCellNode, Swipeable {
 //
 //    }
 
+
+
     open override func didEnterHierarchy() {
-        var node: ASDisplayNode = self
-        while let superNode = node.supernode {
-            node = superNode
+        if let owningNode = self.owningNode, let collectionNode = owningNode as? ASCollectionNode {
+            self.collectionView = collectionNode
 
-            if let collectioNode = node as? ASCollectionNode {
-                self.collectionView = collectioNode
+            swipeController.scrollView = scrollView
 
-                swipeController.scrollView = scrollView
-
-                collectionView?.view.panGestureRecognizer.removeTarget(self, action: nil)
-                collectionView?.view.panGestureRecognizer.addTarget(self, action: #selector(handleCollectionPan(gesture:)))
-                return
-            }
+            collectionView?.view.panGestureRecognizer.removeTarget(self, action: nil)
+            collectionView?.view.panGestureRecognizer.addTarget(self, action: #selector(handleCollectionPan(gesture:)))
         }
     }
 
