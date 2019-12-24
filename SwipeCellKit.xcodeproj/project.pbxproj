@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11AA48216969F34CD1051C1E /* Pods_SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D8E383D85A8B2082A15ED6 /* Pods_SwipeCellKit.framework */; };
 		11D4999D20B0D65400A1F4E7 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4999C20B0D65400A1F4E7 /* SwipeController.swift */; };
 		170BCE721E8340C000F46E18 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BCE711E8340C000F46E18 /* SwipeAnimator.swift */; };
 		3F19AD041E8D711C006B4B3A /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19AD031E8D711C006B4B3A /* SwipeFeedback.swift */; };
@@ -30,6 +31,7 @@
 		B93ECA951EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */; };
 		B93ECA991EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */; };
 		B93ECA9B1EDEEABA00AE05AD /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */; };
+		EF65FB3023B1F042006FAC5F /* SwipeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +54,16 @@
 		3FD0166F1E696D8D00B54FFC /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTransitionLayout.swift; sourceTree = "<group>"; };
 		3FD016DE1E6D778700B54FFC /* SwipeExpanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeExpanding.swift; sourceTree = "<group>"; };
 		3FD016E01E6D7F7700B54FFC /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		56E9622B0B5A21FE1485F330 /* Pods-SwipeCellKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeCellKit.release.xcconfig"; path = "Target Support Files/Pods-SwipeCellKit/Pods-SwipeCellKit.release.xcconfig"; sourceTree = "<group>"; };
+		71D8E383D85A8B2082A15ED6 /* Pods_SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48238BDE4F21812FD6D11FD /* Pods-SwipeCellKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeCellKit.debug.xcconfig"; path = "Target Support Files/Pods-SwipeCellKit/Pods-SwipeCellKit.debug.xcconfig"; sourceTree = "<group>"; };
 		B93ECA8E1EDEE80700AE05AD /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B93ECA901EDEE87800AE05AD /* SwipeCollectionViewCell+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeCollectionViewCell+Accessibility.swift"; sourceTree = "<group>"; };
 		B93ECA921EDEE88800AE05AD /* SwipeCollectionViewCell+Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeCollectionViewCell+Display.swift"; sourceTree = "<group>"; };
 		B93ECA941EDEE8A700AE05AD /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
 		B93ECA9A1EDEEABA00AE05AD /* SwipeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeOptions.swift; sourceTree = "<group>"; };
+		EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCellNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AA48216969F34CD1051C1E /* Pods_SwipeCellKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,8 @@
 			children = (
 				3F234AC51E44A7A400E22A38 /* Source */,
 				3F234AC41E44A7A400E22A38 /* Products */,
+				863F933D2176198EFCA83DD5 /* Pods */,
+				BF710BDE1E24EBF11C5A4507 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +99,7 @@
 		3F234AC51E44A7A400E22A38 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EF65FB3123B1F091006FAC5F /* ASDK */,
 				3F4C721E1E7E8C180097399A /* Swipeable.swift */,
 				170BCE711E8340C000F46E18 /* SwipeAnimator.swift */,
 				B93ECA981EDEE93D00AE05AD /* SwipeAccessibilityCustomAction.swift */,
@@ -126,6 +136,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		863F933D2176198EFCA83DD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A48238BDE4F21812FD6D11FD /* Pods-SwipeCellKit.debug.xcconfig */,
+				56E9622B0B5A21FE1485F330 /* Pods-SwipeCellKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF710BDE1E24EBF11C5A4507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D8E383D85A8B2082A15ED6 /* Pods_SwipeCellKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF65FB3123B1F091006FAC5F /* ASDK */ = {
+			isa = PBXGroup;
+			children = (
+				EF65FB2F23B1F042006FAC5F /* SwipeCellNode.swift */,
+			);
+			name = ASDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -144,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F234ACB1E44A7A400E22A38 /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
 			buildPhases = (
+				279FBAB8F867D39DDBE9453C /* [CP] Check Pods Manifest.lock */,
 				3F234ABE1E44A7A400E22A38 /* Sources */,
 				3F234ABF1E44A7A400E22A38 /* Frameworks */,
 				3F234AC01E44A7A400E22A38 /* Headers */,
@@ -201,6 +237,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		279FBAB8F867D39DDBE9453C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeCellKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F234ABE1E44A7A400E22A38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,6 +269,7 @@
 			files = (
 				3F234AD81E44A94F00E22A38 /* SwipeActionsView.swift in Sources */,
 				3F234AD71E44A94F00E22A38 /* SwipeAction.swift in Sources */,
+				EF65FB3023B1F042006FAC5F /* SwipeCellNode.swift in Sources */,
 				3F3ED7101E486993009DD5D8 /* SwipeActionButton.swift in Sources */,
 				B93ECA931EDEE88800AE05AD /* SwipeCollectionViewCell+Display.swift in Sources */,
 				3F234AD61E44A94F00E22A38 /* SwipeTableViewCell.swift in Sources */,
@@ -353,6 +415,7 @@
 		};
 		3F234ACC1E44A7A400E22A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48238BDE4F21812FD6D11FD /* Pods-SwipeCellKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -376,6 +439,7 @@
 		};
 		3F234ACD1E44A7A400E22A38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E9622B0B5A21FE1485F330 /* Pods-SwipeCellKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

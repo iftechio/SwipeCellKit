@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Example/MailExample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SwipeCellKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/MailExample.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
