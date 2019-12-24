@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
 extension UITableView {
     var swipeCells: [SwipeTableViewCell] {
@@ -34,6 +35,25 @@ extension UICollectionView {
         }
     }
 }
+
+extension ASCollectionNode {
+    var swipeCells: [SwipeCellNode] {
+        return visibleNodes.compactMap({ $0 as? SwipeCellNode })
+    }
+
+    func hideSwipeCell() {
+        swipeCells.forEach { $0.hideSwipe(animated: true) }
+    }
+
+    func setGestureEnabled(_ enabled: Bool) {
+        view.gestureRecognizers?.forEach {
+            guard $0 != view.panGestureRecognizer else { return }
+
+            $0.isEnabled = enabled
+        }
+    }
+}
+
 
 extension UIScrollView {
     var swipeables: [Swipeable] {
