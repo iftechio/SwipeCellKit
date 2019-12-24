@@ -65,7 +65,10 @@ open class SwipeCollectionCellNode: ASCellNode, Swipeable {
 
     func configure() {
         contentNode.clipsToBounds = false
+    }
 
+    open override func didLoad() {
+        super.didLoad()
         swipeController = SwipeController(swipeable: self, actionsContainerView: contentNode.view)
         swipeController.delegate = self
     }
